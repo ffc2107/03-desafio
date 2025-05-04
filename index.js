@@ -6,7 +6,7 @@ class Heroi {
       this.tipo = tipo;
     }
     
-    //Criei um método atacar e dentro utilizei um switch case com os tipos e quais seriam os ataques usados.
+    //Criei um método atacar com switch case
     atacar() {
       let ataque = "";
       switch (this.tipo) {
@@ -25,7 +25,7 @@ class Heroi {
         default:
           ataque = "ataque inexistente";
       }
-      
+
       //Saída
       console.log(`O ${this.tipo} atacou usando ${ataque}`);
     }
